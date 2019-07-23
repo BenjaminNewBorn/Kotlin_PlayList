@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+
+    <Button
+            android:text="Add Tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/add_tracks_btn"
+            app:layout_constraintEnd_toStartOf="@+id/view_tracks_btn"
+    />
+    <Button
+            android:text="View Tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="204dp"
+            android:id="@+id/view_tracks_btn"
+            app:layout_constraintTop_toTopOf="@+id/add_tracks_btn"
+            app:layout_constraintStart_toEndOf="@+id/add_tracks_btn"
+    />
+</android.support.constraint.ConstraintLayout>
